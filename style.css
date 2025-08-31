@@ -12,7 +12,6 @@
   --radius: 18px;
   --radius-sm: 12px;
   --shadow: 0 10px 30px rgba(0,0,0,.06);
-  --spacing: clamp(16px, 2.2vw, 28px);
   --maxw: 1080px;
 }
 @media (prefers-color-scheme: dark){
@@ -22,8 +21,8 @@
   }
 }
 /* Manual override via [data-theme] */
-html[data-theme="light"]{--bg:#fff;--text:#0B0B0B;--muted:#6f6f6f;--border:#e6e6e6;--surface:#F8F8F8;--shadow:0 10px 30px rgba(0,0,0,.06)}
-html[data-theme="dark"]{--bg:#0B0B0B;--text:#F4F4F4;--muted:#C5C5C5;--border:#1f1f1f;--surface:#121212;--shadow:0 12px 30px rgba(0,0,0,.25)}
+html[data-theme="light"]{--bg:#fff;--text:#0B0B0B;--muted:#6f6f6f;--border:#e6e6e6;--surface:#F8F8F8}
+html[data-theme="dark"]{--bg:#0B0B0B;--text:#F4F4F4;--muted:#C5C5C5;--border:#1f1f1f;--surface:#121212}
 
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -38,7 +37,7 @@ img{max-width:100%; display:block}
 
 /* Header / Nav */
 .header{position:sticky; top:0; z-index:20; backdrop-filter:saturate(180%) blur(8px);
-  background:color-mix(in srgb, var(--bg) 80%, transparent); border-bottom:1px solid var(--border);}
+  background:color-mix(in srgb, var(--bg) 85%, transparent); border-bottom:1px solid var(--border);}
 .nav{display:grid; grid-template-columns:1fr auto 1fr; align-items:center; padding:16px 0}
 .brand{display:inline-flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px}
 .brand img{width:28px; height:28px; border-radius:8px; box-shadow:var(--shadow)}
@@ -62,7 +61,7 @@ img{max-width:100%; display:block}
 
 /* Hero */
 .hero{padding: clamp(56px, 10vw, 120px) 0}
-.headline{font-size: clamp(2.2rem, 5.4vw, 4rem); line-height:1.05; margin:0 0 12px}
+.headline{font-size: clamp(2.2rem, 5.4vw, 4rem); line-height:1.05; margin:0 0 12px; text-wrap:balance}
 .sub{color:var(--muted); font-size: clamp(1rem, 1.6vw, 1.15rem); max-width: 70ch; margin:0 auto 22px}
 .center{text-align:center}
 
@@ -110,4 +109,3 @@ img{max-width:100%; display:block}
 .underline{border-bottom:1px solid currentColor}
 .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
 @media (prefers-reduced-motion: reduce){ *{animation:none !important; transition:none !important} }
-
