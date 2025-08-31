@@ -1,1 +1,93 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Affiliate/Partner Application — Fuel AI</title>
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Fuel AI"/><span>Fuel AI</span></a>
+        <ul class="nav-links">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="philosophy.html">Our Philosophy</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="themeToggle" class="btn btn-ghost">Auto</button>
+          <button id="menuToggle" class="menu-btn">Menu</button>
+        </div>
+      </div>
+      <div id="mobilePanel" class="mobile-panel"><div class="container"><ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="philosophy.html">Our Philosophy</a></li>
+        <li><a href="blog/index.html">Blog</a></li></ul></div></div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Affiliate / Partner Application</h1>
+          <p class="muted">Share a smarter fitness app that unifies calories, training, and sleep. Tell us about your audience—we’ll reply in 3–5 business days.</p>
+          <form class="form" action="https://formspree.io/f/your-id" method="POST">
+            <label><span>Name</span><input type="text" name="name" required></label>
+            <label><span>Email</span><input type="email" name="email" required></label>
+            <label><span>Primary platform</span><input type="text" name="platform" placeholder="Instagram, TikTok, YouTube…" required></label>
+            <label><span>Audience size</span><input type="text" name="audience" placeholder="e.g., 12,500" required></label>
+            <label><span>Message</span><textarea name="message" rows="6" placeholder="Tell us about your content and audience." required></textarea></label>
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div><a class="brand" href="index.html"><img src="assets/logo.svg" alt="Fuel AI"/><span>Fuel AI</span></a><p class="muted">© <span id="year"></span> Fuel AI.</p></div>
+        <nav class="footer-nav" aria-label="Footer">
+          <div>
+            <h4>Product</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="blog/index.html">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="philosophy.html">Our Philosophy</a></li>
+              <li><a href="partners.html">Affiliate/Partner Application</a></li>
+              <li><a href="enterprise.html">Custom/Enterprise Pricing</a></li>
+              <li><a href="mailto:appfuelai@gmail.com">Email</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+              <li><a href="dpa.html">Data Processing Addendum</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Social</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
 
