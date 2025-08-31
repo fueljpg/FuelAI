@@ -34,7 +34,7 @@
   // year in footer
   const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
 
-  // active link marker
+  // active link underline
   const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   document.querySelectorAll('.nav-links a, .footer-nav a').forEach(a => {
     const href = (a.getAttribute('href') || '').toLowerCase();
@@ -46,4 +46,3 @@
   // mobile menu
   if (menuBtn && mobile) menuBtn.addEventListener('click', () => mobile.classList.toggle('open'));
 })();
-
